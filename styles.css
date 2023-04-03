@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 100%;
+  font: inherit;
+  scroll-behavior: smooth;
+  vertical-align: baseline;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #000000, #191919, #2b2b2b, #3f3f3f, #535353, #535353, #535353, #535353, #3f3f3f, #2b2b2b, #191919, #000000);
+}
+
+#container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.containercalculadora {
+  padding: 3rem 1.5rem;
+  background-color: rgb(7, 7, 7);
+}
+
+.containercalculadora form h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.containercalculadora form h2 {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.containercalculadora form p {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.inputbox {
+  margin-bottom: 1.5rem;
+}
+
+.inputbox label {
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+}
+
+.inputfield {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.inputfield span, .inputfield i {
+  color: black;
+  font-size: 1.3rem;
+  padding: 0.6rem 1rem;
+}
+
+.inputfield input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 1.3rem;
+  color: black;
+  padding: 0 0.5rem;
+}
+
+.inputfield input::-webkit-outer-spin-button,
+.inputfield input::-webkit-inner-spin-button  {
+  appearance: none;
+}
+
+.inputfield input:focus {
+  outline: none;
+}
+
+#calculate {
+  width: 100%;
+  margin: .5rem 0rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 0.5rem 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#infos .resultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 1rem 0rem;
+}
+
+#infos .resultado .imc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#infos .resultado #description {
+  max-width: 30ch;
+  color: white;
+}
+
+#infos .resultado .imc #value {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+#infos .resultado .imc #value.attention {
+  color: red;
+}
+
+#infos .resultado .imc .resultIMC {
+  color: white;
+}
+
+.infoplus {
+  padding-top: 1rem;
+  border-top: 2px solid rgb(255, 255, 255);
+  text-align: center;
+}
+
+.infoplus a {
+  color: white;
+  text-align: center;
+  margin-right: .3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+.containercalculadora form h1 {
+  font-size: 1.6rem;
+}
+
+#container {
+  margin: 0 1rem;
+}
+
+#infos .resultado {
+  display: flex;
+  flex-direction: column;
+}
+
+#infos .resultado #description {
+  max-width: 30ch;
+  color: white;
+  text-align: center;
+}
+}
